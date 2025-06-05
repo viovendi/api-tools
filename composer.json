@@ -20,7 +20,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "8.0.99"
+            "php": "8.1.99"
         },
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
@@ -32,17 +32,14 @@
         }
     },
     "require": {
-        "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
-        "laminas-api-tools/api-tools-api-problem": "^1.6",
-        "laminas-api-tools/api-tools-content-negotiation": "^1.8",
-        "laminas-api-tools/api-tools-content-validation": "^1.12",
-        "laminas-api-tools/api-tools-hal": "^1.10",
-        "laminas-api-tools/api-tools-mvc-auth": "^1.8",
-        "laminas-api-tools/api-tools-oauth2": "^1.9",
-        "laminas-api-tools/api-tools-provider": "^1.4",
-        "laminas-api-tools/api-tools-rest": "^1.8",
-        "laminas-api-tools/api-tools-rpc": "^1.8",
-        "laminas-api-tools/api-tools-versioning": "^1.7",
+        "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
+        "laminas-api-tools/api-tools-api-problem": "^1.7.0",
+        "laminas-api-tools/api-tools-content-negotiation": "^1.9.0",
+        "laminas-api-tools/api-tools-hal": "^1.11",
+        "laminas-api-tools/api-tools-mvc-auth": "^1.9",
+        "laminas-api-tools/api-tools-oauth2": "^1.10.0",
+        "laminas-api-tools/api-tools-rpc": "^1.9.0",
+        "laminas-api-tools/api-tools-rest": "^1.9.0",
         "laminas/laminas-db": "^2.8.1",
         "laminas/laminas-eventmanager": "^2.6.3 || ^3.0.1",
         "laminas/laminas-loader": "^2.5.1",
@@ -87,5 +84,44 @@
     },
     "replace": {
         "zfcampus/zf-apigility": "^1.4.0"
-    }
+    },
+    "provide": {
+        "laminas-api-tools/api-tools-api-problem": "1.7.x-dev",
+        "laminas-api-tools/api-tools-content-negotiation": "1.9.x-dev",
+        "laminas-api-tools/api-tools-hal": "1.11.x-dev",
+        "laminas-api-tools/api-tools-mvc-auth": "1.9.x-dev",
+        "laminas-api-tools/api-tools-oauth2": "1.10.x-dev",
+        "laminas-api-tools/api-tools-rpc": "1.9.x-dev",
+        "laminas-api-tools/api-tools-rest": "1.9.x-dev"
+    },    
+    "repositories": [
+      {
+        "type": "git",
+        "url": "https://github.com/viovendi/api-tools-api-problem"
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/viovendi/api-tools-hal"
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/viovendi/api-tools-content-negotiation"
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/viovendi/api-tools-mvc-auth"
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/viovendi/api-tools-oauth2"
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/viovendi/api-tools-rpc"
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/viovendi/api-tools-rest"
+      }
+  ]
 }
